@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Outfit', sans-serif;
+    }
+
+    :is(a, button, input, textarea, select, details, summary):focus-visible {
+        outline: white solid 0.15rem;
+        outline-offset: 0.188rem;
+    }
+}
+
+@layer components {
+    .transition-default {
+        @apply transition-all duration-300 ease-in-out;
+    }
+
+    .eye-hover {
+        position: relative;
+    }
+
+    /* ---------------------------------- */
+    /*    The eye image and the overlay   */
+    /* ---------------------------------- */
+
+    .eye-hover::before,
+    .eye-hover::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        opacity: 0;
+        @apply transition-all duration-300 ease-in-out;
+    }
+
+    /* ------------------------------------ */
+    /*   The eye image and his hover state  */
+    /* ------------------------------------ */
+
+    .eye-hover::before {
+        background: url('./images/icon-view.svg') no-repeat center center;
+        z-index: 5;
+    }
+
+    .eye-hover:hover::before,
+    .eye-hover:focus-visible::before {
+        opacity: 1;
+    }
+
+    /* ---------------------------------- */
+    /*   The overlay and his hover state  */
+    /* ---------------------------------- */
+
+    .eye-hover::after {
+        background: theme('colors.blue-hover');
+        z-index: 4;
+    }
+
+    .eye-hover:hover::after,
+    .eye-hover:focus-visible::after {
+        opacity: 0.4;
+    }
+
+    /* ------------------- */
+    /*        Icons        */
+    /* ------------------- */
+
+    .icon-ethereum,
+    .icon-clock {
+        display: flex;
+    }
+
+    .icon-ethereum::before {
+        content: '';
+        display: block;
+        background: url('./images/icon-ethereum.svg') no-repeat center center;
+        width: 11px;
+        margin-right: 7px;
+    }
+
+    .icon-clock::before {
+        content: '';
+        display: block;
+        background: url('./images/icon-clock.svg') no-repeat center center;
+        width: 17px;
+        margin-right: 5px;
+    }
+}
+
+
+@layer utilities {
+    @media (prefers-reduced-motion: reduce) {
+        html:focus-within {
+            scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+            -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+            -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+            -webkit-transition-duration: 0.01ms !important;
+            -o-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
+}

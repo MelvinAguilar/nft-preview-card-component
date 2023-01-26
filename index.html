@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body class="grid min-h-screen place-content-center bg-very-dark-blue">
+    <main>
+      <h1 class="sr-only">NFT preview card component</h1>
+
+      <div
+        class="m-4 flex max-w-[350px] flex-col gap-[12px] rounded-2xl bg-very-dark-blue-card p-6 pb-[35px] shadow-lg"
+      >
+        <a
+          href="#"
+          class="eye-hover transition-default block overflow-hidden rounded-2xl"
+          aria-label="Preview Equilibrium NFT"
+        >
+          <img
+            src="./images/image-equilibrium.jpg"
+            alt=""
+            width="302"
+            height="302"
+          />
+        </a>
+
+        <h2>
+          <a
+            href="#"
+            class="transition-default mt-[8px] inline-block text-[24px] font-semibold tracking-[-0.04em] text-white hover:text-cyan"
+          >
+            Equilibrium #3429
+          </a>
+        </h2>
+
+        <p class="text-[18px] text-soft-blue">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="mb-[8px] mt-[9px] flex items-center justify-between">
+          <p
+            class="icon-ethereum text-[16px] font-[600] tracking-[0.024em] text-cyan"
+          >
+            0.041
+            <abbr class="no-underline" title="Ethereum">ETH</abbr>
+          </p>
+          <p class="icon-clock tracking-[0.024em] text-soft-blue">
+            3 days left
+          </p>
+        </div>
+        <figure
+          class="flex items-center gap-[15px] border-t border-very-dark-blue-line pt-[17px] tracking-[0.012em]"
+        >
+          <img
+            src="./images/image-avatar.png"
+            alt="Jules Wyvern"
+            width="33"
+            height="33"
+            class="rounded-full border border-white"
+          />
+          <figcaption>
+            <p class="text-soft-blue">
+              Creation of
+              <a href="#" class="transition-default text-white hover:text-cyan">
+                Jules Wyvern
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+    </main>
+  </body>
+</html>
