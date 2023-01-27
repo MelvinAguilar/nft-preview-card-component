@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="NFT Preview Card Component" />
+    <meta name="author" content="Melvin Aguilar" />
     <link
       rel="icon"
       type="image/png"
@@ -10,6 +13,8 @@
       href="./images/favicon-32x32.png"
     />
     <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -21,11 +26,11 @@
       <h1 class="sr-only">NFT preview card component</h1>
 
       <div
-        class="m-4 flex max-w-[350px] flex-col gap-[12px] rounded-2xl bg-very-dark-blue-card p-6 pb-[35px] shadow-lg"
+        class="m-4 flex max-w-[21.875rem] flex-col gap-3 rounded-2xl bg-very-dark-blue-card p-6 pb-[2.1875rem] shadow-lg"
       >
         <a
           href="#"
-          class="eye-hover transition-default block overflow-hidden rounded-2xl"
+          class="eye-hover transition-default block overflow-hidden rounded-xl"
           aria-label="Preview Equilibrium NFT"
         >
           <img
@@ -39,19 +44,17 @@
         <h2>
           <a
             href="#"
-            class="transition-default mt-[8px] inline-block text-[24px] font-semibold tracking-[-0.04em] text-white hover:text-cyan"
+            class="transition-default mt-2 inline-block text-2xl font-semibold tracking-[-0.04em] text-white hover:text-cyan"
           >
             Equilibrium #3429
           </a>
         </h2>
 
-        <p class="text-[18px] text-soft-blue">
+        <p class="text-lg text-soft-blue">
           Our Equilibrium collection promotes balance and calm.
         </p>
-        <div class="mb-[8px] mt-[9px] flex items-center justify-between">
-          <p
-            class="icon-ethereum text-[16px] font-[600] tracking-[0.024em] text-cyan"
-          >
+        <div class="mb-2 mt-[0.5625rem] flex items-center justify-between">
+          <p class="icon-ethereum font-semibold tracking-[0.024em] text-cyan">
             0.041
             <abbr class="no-underline" title="Ethereum">ETH</abbr>
           </p>
@@ -60,7 +63,7 @@
           </p>
         </div>
         <figure
-          class="flex items-center gap-[15px] border-t border-very-dark-blue-line pt-[17px] tracking-[0.012em]"
+          class="flex items-center gap-[0.9375rem] border-t border-very-dark-blue-line pt-[1.0625rem] tracking-[0.012em]"
         >
           <img
             src="./images/image-avatar.png"
