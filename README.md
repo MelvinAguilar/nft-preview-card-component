@@ -9,11 +9,11 @@
     <a href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U"><strong>Frontend Mentor Challenge</strong></a>
     <br />
     <br />
-    <a href="">View Demo</a>
+    <a href="https://nft-preview-card-component-hdez.vercel.app/">View Demo</a>
     ·
-    <a href="" target="_blank">Report Bug</a>
+    <a href="https://github.com/MelvinAguilar/nft-preview-card-component/issues" target="_blank">Report Bug</a>
     ·
-    <a href="" target="_blank">Request Feature</a>
+    <a href="https://github.com/MelvinAguilar/nft-preview-card-component/issues" target="_blank">Request Feature</a>
   </p>
 </div>
 
@@ -25,7 +25,7 @@
   </a>
   <!-- Status -->
     <a href="#">
-    <img src="https://img.shields.io/badge/Status-Pending-E55937?style=for-the-badge" alt="Status">
+    <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" alt="Status Completed">
   </a>
 
 </div>
@@ -42,8 +42,8 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 <h2 align="center">Links</h2>
 
-<!-- - Solution URL: [Intro section with dropdown navigation (React + Tailwind + Dark mode) (React + SASS) | Frontend Mentor](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-tmQXOQU78e)
-- Live Site URL: [https://intro-section-with-dropdown-navigation-hdez.vercel.app/](https://intro-section-with-dropdown-navigation-hdez.vercel.app/)  -->
+- Solution URL: [NFT preview card component (Tailwind CSS) | Frontend Mentor](https://www.frontendmentor.io/solutions/nft-preview-card-component-tailwind-css-FN3tcexyJI)
+- Live Site URL: [https://nft-preview-card-component-hdez.vercel.app/](https://nft-preview-card-component-hdez.vercel.app/)
 
 <br>
 
@@ -72,7 +72,7 @@ Users should be able to:
 <!-- Bagdes -->
 
 ![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-[](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 - Tailwind CSS
